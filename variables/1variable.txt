@@ -1,0 +1,140 @@
+
+Variables in C:
+===============
+A variable is the name of the memory location. It is used to store information. 
+Its value can be altered and reused several times. It is a way to represent memory 
+location through symbols so that it can be easily identified.
+Variables are key building elements of the C programming language used to store and modify 
+data in computer programs. A variable is a designated memory region that stores a specified 
+data type value. Each variable has a unique identifier, its name, and a data type describing 
+the type of data it may hold.
+
+Syntax:
+--------
+The syntax for defining a variable in C is as follows:
+        
+        data_type variable_name;  
+Here,
+
+data_type:
+-----------
+    It represents the type of data the variable can hold. Examples of data types in C 
+include int (integer), float (a floating-point number), char (character), double (a double-precision
+floating-point number),
+variable_name: 
+---------------
+    It is the identifier for the variable, i.e., the name you give to the variable to 
+access its value later in the program. The variable name must follow specific rules, like starting 
+with a letter or underscore and consisting of letters, digits, and underscores.
+
+For example, to declare the integer variable age:
+
+        int age; 
+
+The three components of declaring a variable:
+=============================================
+1. Variable Declaration:
+-------------------------
+The process of telling the compiler about a variable's existence and data type is known as 
+variable declaration. It notifies the compiler that a variable with a specific name and data 
+type will be used in the program. Still, no memory for the variable is allocated at this moment.
+It is usually seen at the start of a function or block before the variable is utilized.
+
+The general syntax for variable declaration is
+
+        data_type variable_name;  
+
+2. Variable Definition:
+--------------------------
+The process of reserving memory space for the variable to keep its contents during program 
+execution is known as a variable definition. It is based on the data type and connects the 
+variable name with a particular memory address of sufficient size.
+
+A variable in C can be declared and defined in the same statement, although they can also be 
+separated if necessary.
+
+3. Variable Initialization:
+-----------------------------
+Variable declaration is the act of informing the compiler about the existence and data type of 
+a variable. It informs the compiler that a variable with a specific name and data type will be 
+used in the program, but that memory for the variable still needs to be allocated.
+
+Not explicitly initialized variables will contain garbage/random data that may result in unexpected
+program behavior.
+
+Types of Variables in C:
+=========================
+    There are many types of variables in c:
+
+        1. local variable
+        2. global variable
+        3. static variable
+        4. automatic variable
+        5. external variable
+
+1. Local variable:
+------------------
+A variable that is declared inside the function or block is called a local variable.
+
+It must be declared at the start of the block.
+
+void function1(){  
+    int x=10;//local variable  
+}  
+
+You must have to initialize the local variable before it is used.
+
+2. Global Variable:
+--------------------
+A variable that is declared outside the function or block is called a global variable. 
+Any function can change the value of the global variable. It is available to all the functions.
+
+It must be declared at the start of the block.
+
+int value=20;//global variable  
+void function1(){  
+    int x=10;//local variable  
+}  
+
+3. Static Variable:
+---------------------
+A variable that is declared with the static keyword is called static variable.
+
+It retains its value between multiple function calls.
+
+void function1(){  
+    int x=10;//local variable  
+    static int y=10;//static variable  
+    x=x+1;  
+    y=y+1;  
+    printf("%d,%d",x,y);  
+}  
+If you call this function many times, the local variable will print the same value for 
+each function call, e.g, 11,11,11 and so on. But the static variable will print the incremented 
+value in each function call, e.g. 11, 12, 13 and so on.
+
+4. Automatic Variable:
+------------------------
+All variables in C that are declared inside the block, are automatic variables by default. 
+We can explicitly declare an automatic variable using auto keyword.
+
+void main(){  
+    int x=10;//local variable (also automatic)  
+    auto int y=20;//automatic variable  
+}  
+
+5. External Variable:
+---------------------
+We can share a variable in multiple C source files by using an external variable. To declare 
+an external variable, you need to use extern keyword.
+
+myfile.h
+    extern int x=10;//external variable (also global)  
+
+program1.c
+
+#include "myfile.h"  
+#include <stdio.h>  
+void printValue(){  
+    printf("Global variable: %d", global_variable);  
+}  
