@@ -1,0 +1,51 @@
+Data Types in C:
+=================
+A data type specifies the type of data that a variable can store such as integer, floating, character, etc.
+
+Basic Data Types:
+------------------
+The basic data types are integer-based and floating-point based. C language supports both signed
+and unsigned literals.
+
+The memory size of the basic data types may change according to 32 or 64-bit operating system.
+
+Int:
+----
+Integers are entire numbers without any fractional or decimal parts, and the int data type is used to 
+represent them.
+
+It is frequently applied to variables that include values, such as counts, indices, or other 
+numerical numbers. The int data type may represent both positive and negative numbers because it 
+is signed by default.
+
+An int takes up 4 bytes of memory on most devices, allowing it to store values between around -2 
+billion and +2 billion.
+
+Char:
+-----
+Individual characters are represented by the char data type. Typically used to hold ASCII or UTF-8
+encoding scheme characters, such as letters, numbers, symbols, or commas. There are 256 characters
+that can be represented by a single char, which takes up one byte of memory. Characters such as 'A', 
+'b', '5', or '$' are enclosed in single quotes.
+
+Float:
+------
+To represent integers, use the floating data type. Floating numbers can be used to represent fractional
+units or numbers with decimal places.
+
+The float type is usually used for variables that require very good precision but may not be very precise.
+It can store values with an accuracy of about 6 decimal places and a range of about 3.4 x 1038 in 4 bytes 
+of memory.
+
+Double:
+-------
+Use two data types to represent two floating integers. When additional precision is needed, such as in 
+scientific calculations or financial applications, it provides greater accuracy compared to float.
+
+Double type, which uses 8 bytes of memory and has an accuracy of about 15 decimal places, yields larger values.
+C treats floating point numbers as doubles by default if no explicit type is supplied.
+
+int age = 25;  
+char grade = 'A';  
+float temperature = 98.6;  
+double pi = 3.14159265359;  
