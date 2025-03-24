@@ -1,0 +1,30 @@
+Keywords in C:
+================
+Keywords in C are reserved words that have predefined meanings and are part of the C language syntax.
+These keywords cannot be used as variable names, function names, or any other identifiers within the 
+program except for their intended purpose. They are used to define the structure flow and behavior of a C program.
+
+The compiler recognizes a defined set of keywords in the C programming language. These keywords have specialized
+purposes and play critical roles in establishing the logic and behavior of a program. Here are some characteristics 
+of C keywords:
+
+Reserved: 
+----------
+The C language reserves keywords are those keywords that cannot be used as identifiers in programs.
+Using a keyword as a variable name or other identifier will cause a compilation error.
+
+Predefined Meaning:
+-------------------
+Each keyword has a specific meaning that is assigned by the C language. These meanings are built into 
+the C language's grammar and syntax and the compiler interprets them accordingly.
+
+Specific Use:
+-------------
+Keywords are designed for specific purposes and contexts within the C language. They define control 
+structures, data types, flow control, and other language constructs. Attempting to use a keyword outside 
+of its intended purpose will result in a compilation error.
+
+Standardized:
+--------------
+C language keywords are standardized across different compilers and implementations. 
+It ensures the consistency and portability of C programs across different platforms and environments.
