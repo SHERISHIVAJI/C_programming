@@ -1,0 +1,112 @@
+C Operators
+===========
+
+An operator is simply a symbol that is used to perform operations. There can be many types of operations like arithmetic, logical, bitwise, etc.
+
+There are following types of operators to perform different types of operations in C language.
+
+Arithmetic Operators
+Relational Operators
+Logical Operators
+Assignment Operator
+Unary Operators
+Ternary or Conditional Operators
+Shift Operators
+Bitwise Operators
+Misc Operator
+
+Precedence of Operators in C:
+-----------------------------
+The precedence of operator species that which operator will be evaluated first and next.
+The associativity specifies the operator direction to be evaluated; it may be left to right or right to left.
+
+Arithmetic Operators:
+---------------------
+An arithmetic operator performs mathematical operations such as addition, subtraction and 
+multiplication on numerical values (constants and variables).
+
+Relational Operators:
+---------------------
+A relational operator checks the relationship between two operands. 
+If the relation is true, it returns 1; if the relation is false, it returns value 0.
+Operands may be variables, constants or expressions.
+Relational operators are used in decision making and loops.
+
+Logical Operators:
+------------------
+These operators are used to combine the results of two or more conditions. An expression 
+containing logical operator returns either 0 or 1 depending upon whether expression results true 
+or false. Logical operators are commonly used in decision making in C programming.
+
+Assignment Operators:
+---------------------
+Assignment operators are used to assign a value (or) an expression 
+(or) a value of a variable to another variable.
+ Syntax : variable name=expression (or) value (or) variable
+
+Compound assignment operator:
+'C' provides compound assignment operators to assign a value to variable in order to assign a 
+new value to a variable after performing a specified operation.
+
+Increment and Decrement Operators / Unary Operators: 
+----------------------------------------------------
+Unary operators are having higher priority than the other operators. Unary operators, meaning 
+they only operate on a single operand. 
+Increment Operator in C Programming 
+1. Increment operator is used to increment the current value of variable by adding integer 1. 
+2. Increment operator can be applied to only variables. 
+3. Increment operator is denoted by ++. 
+We have two types of increment operator i.e Pre-Increment and Post-Increment Operator. 
+
+Pre-Increment :
+Pre-increment operator is used to increment the value of variable before using in the expression. In 
+the Pre-Increment value is first incremented and then used inside the expression. 
+b = ++y; 
+In this example suppose the value of variable „y‟ is 5 then value of variable „b‟ will be 6 because 
+the value of „y‟ gets modified before using it in a expression. 
+
+Post-Increment :
+Post-increment operator is used to increment the value of variable as soon as after executing 
+expression completely in which post increment is used. In the Post-Increment value is first used 
+in a expression and then incremented. 
+b = x++; 
+In this example suppose the value of variable „x‟ is 5 then value of variable „b‟ will be 5 because 
+old value of „x‟ is used. 
+ 
+ 
+Note :  
+We cannot use increment operator on the constant values because increment operator operates on 
+only variables. It increments the value of the variable by 1 and stores the incremented value back 
+to the variable 
+b = ++5; 
+or 
+b = 5++; 
+ 
+The syntax of the operators is given below. 
+ 
+          ++<variable name>                   --<variable name> 
+         <variable name>++                    <variable name>-- 
+The operator ++ adds 1 to the operand and – subtracts 1 from the operand. These  operators in 
+two forms : prefix (++x) and postfix(x++). 
+ 
+Where  
+1 : ++x : Pre increment, first increment and then do the operation. 
+2 : - -x  : Pre decrement, first decrements and then do the operation. 
+3 : x++ : Post increment, first do the operation and then increment. 
+4 : x- -  : Post decrement, first do the operation and then decrement. 
+
+Conditional Operator/ Ternary operator: 
+---------------------------------------
+conditional operator checks the condition and executes the statement depending of the condition. 
+A conditional operator is a ternary operator, that is, it works on 3 operands. 
+Conditional operator consist of two symbols. 
+ 
+                    1 : question mark (?). 
+                    2 : colon ( : ). 
+
+               +--------------------------------------+     
+               |    Syntax : condition ? exp1 : exp2; |
+               +--------------------------------------+
+                           
+    It first evaluate the condition, if it is true (non-zero)  then the “exp1” is 
+evaluated, if the condition is false (zero) then the “exp2” is evaluated. 
