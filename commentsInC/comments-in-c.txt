@@ -1,0 +1,12 @@
+Comments :
+==========
+Comments in C language are used to provide information about lines of code.It is widely used for documenting code.
+Comments are like helping text in your C program and they are ignored by the compiler. 
+You can not have comments with in comments and they do not occur within a string or 
+character literals. 
+There are two types of comments in C
+    1. Single Line Comments
+    2. Multi Line Comments
+Single Line Comments : It reprresented by double slash //
+
+Multi Line Comments : It reprresented by slash asterisk /* ... */
