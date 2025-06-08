@@ -1,0 +1,46 @@
+Escape Sequence in C:
+======================
+Programming languages like C have escape sequences as a standard feature. 
+They enable the inclusion of special characters and control patterns in strings
+and character constants that are difficult to represent or write directly. 
+In this blog post, we will explore escape sequences in C, their syntax, usage, and 
+examples with matching outputs. Therefore, let's start this adventure to understanding escape sequences in C.
+
+An escape sequence in the C programming language consists of a backslash () 
+and a character that stands in for a special character or control sequence. 
+During the compilation process, the C compiler substitutes any escape sequences it 
+comes across with the relevant character or control sequence. It enables the use of 
+difficult-to-represent characters like newlines, tabs, quotations, and backslashes.
+
+It is composed of two or more characters starting with backslash \. For example: \n represents new line.
+
+Regular Escape Sequences:
+-------------------------
+\a
+Alarm or Beep
+\b
+Backspace
+\f
+Form Feed
+\n
+New Line
+\r
+Carriage Return
+\t
+Tab (Horizontal)
+\v
+Vertical Tab
+\\
+Backslash
+\'
+Single Quote
+\"
+Double Quote
+\?
+Question Mark
+\nnn
+octal number
+\xhh
+hexadecimal number
+\0
+Null
