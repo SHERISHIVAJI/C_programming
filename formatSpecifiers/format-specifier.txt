@@ -1,0 +1,30 @@
+C Format Specifier:
+===================
+The Format specifier is a string used in the formatted input and output functions. The format string determines the format of the input and output. The format string always starts with a '%' character.
+
+The commonly used format specifiers in printf() function are:
+
+%d or %i:
+It is used to print the signed integer value where signed integer means that the variable can hold both positive and negative values.
+%u:
+It is used to print the unsigned integer value where the unsigned integer means that the variable can hold only positive value.
+%o:
+It is used to print the octal unsigned integer where octal integer value always starts with a 0 value.
+%x:
+It is used to print the hexadecimal unsigned integer where the hexadecimal integer value always starts with a 0x value. In this, alphabetical characters are printed in small letters such as a, b, c, etc.
+%X:
+It is used to print the hexadecimal unsigned integer, but %X prints the alphabetical characters in uppercase such as A, B, C, etc.
+%f:
+It is used for printing the decimal floating-point values. By default, it prints the 6 values after '.'.
+%e/%E:
+It is used for scientific notation. It is also known as Mantissa or Exponent.
+%g:
+It is used to print the decimal floating-point values, and it uses the fixed precision, i.e., the value after the decimal in input would be exactly the same as the value in the output.
+%p:
+It is used to print the address in a hexadecimal form.
+%c:
+It is used to print the unsigned character.
+%s:
+It is used to print the strings.
+%ld:
+It is used to print the long-signed integer value.
