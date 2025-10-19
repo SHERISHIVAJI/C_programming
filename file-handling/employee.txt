@@ -1,0 +1,3 @@
+ID = 102
+Name= Sheri
+Salary= 98.40
