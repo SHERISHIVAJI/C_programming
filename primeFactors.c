@@ -1,14 +1,17 @@
 #include<stdio.h>
-int main()
-{
-    int num;
-    scanf("%d", &num);
 
-    for(int i = 2; num > 1; i++) {
-        while(num%i == 0) {
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    printf("Prime factors of %d are: ", number);
+    for(int i = 2; number > 1; i++) {
+        while(number % i == 0) {
             printf("%d ", i);
-            num/=i;
+            number /= i;
         }
     }
+
     return 0;
 }
